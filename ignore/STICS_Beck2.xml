@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution solutionVersion="1.0.0.171" productVersion="15.0.0" PIVersion="1.0.0.0" href="https://usepa.sharepoint.com/sites/ORD/GED/Files%20for%20Drupal/sticsv5a.xsn" name="urn:schemas-microsoft-com:office:infopath:sticsv5a:-myXSD-2010-12-01T19-16-46" ?><?mso-application progid="InfoPath.Document" versionProgid="InfoPath.Document.2"?><my:myFields xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2010-12-01T19:16:46" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003" xml:lang="en-us">
+	<my:primaryAuth>Marcus Beck</my:primaryAuth>
+	<my:title>Quantifying Seagrass Light Requirements Using an Algorithm to Spatially Resolve Depth of Colonization</my:title>
+	<my:purpose>This abstract is for a contributed presentation at the NWQMC 2016 meeting in Tampa, Florida.</my:purpose>
+	<my:bibliography>10th National Monitoring Conference, Tampa, FL May 2 - 6</my:bibliography>
+	<my:pageChrg></my:pageChrg>
+	<my:category>4</my:category>
+	<my:keyword1>seagrass</my:keyword1>
+	<my:productType>Presentations and Technical Summaries</my:productType>
+	<my:commSubtype></my:commSubtype>
+	<my:dataSubtype></my:dataSubtype>
+	<my:extramuralSubtype></my:extramuralSubtype>
+	<my:journalSubtype>Peer Reviewed</my:journalSubtype>
+	<my:presentSubtype>Abstract</my:presentSubtype>
+	<my:pubRptSubtype></my:pubRptSubtype>
+	<my:siteAssessSubtype></my:siteAssessSubtype>
+	<my:other>Enter type of product</my:other>
+	<my:addAuthor></my:addAuthor>
+	<my:Branch>EDEB</my:Branch>
+	<my:productCat>4</my:productCat>
+	<my:PIName>Marcus Beck</my:PIName>
+	<my:PIEmail>beck.marcus@epa.gov</my:PIEmail>
+	<my:group1>
+		<my:group2>
+			<my:EPAAuthor>James D. Hagy III</my:EPAAuthor>
+			<my:EPAAuthOrg>GED</my:EPAAuthOrg>
+			<my:EPAAuthContribute></my:EPAAuthContribute>
+		</my:group2>
+	<my:group2>
+										<my:EPAAuthor>Chengfeng Le</my:EPAAuthor>
+										<my:EPAAuthOrg>GED</my:EPAAuthOrg>
+										<my:EPAAuthContribute></my:EPAAuthContribute>
+									</my:group2></my:group1>
+	<my:group3>
+		<my:group4>
+			<my:field11></my:field11>
+			<my:field12></my:field12>
+			<my:field13></my:field13>
+			<my:field14></my:field14>
+			<my:field15></my:field15>
+		</my:group4>
+	</my:group3>
+	<my:group5>
+		<my:group6>
+			<my:ExAuthName></my:ExAuthName>
+			<my:ExAuthOrg></my:ExAuthOrg>
+			<my:ExtAuthEmail></my:ExtAuthEmail>
+		</my:group6>
+	</my:group5>
+	<my:field16></my:field16>
+	<my:OMISTast></my:OMISTast>
+	<my:APGFY></my:APGFY>
+	<my:APMFY></my:APMFY>
+	<my:MYP></my:MYP>
+	<my:field21>false</my:field21>
+	<my:field22>2</my:field22>
+	<my:Policy>2</my:Policy>
+	<my:keyword2>estuary</my:keyword2>
+	<my:keyword3>depth of colonization</my:keyword3>
+	<my:keyword4>water clarity</my:keyword4>
+	<my:proceedSubtype></my:proceedSubtype>
+	<my:primAuthContr></my:primAuthContr>
+	<my:QAPP></my:QAPP>
+	<my:reviewer1>John Lehrter</my:reviewer1>
+	<my:reviewer1Org>USEPA</my:reviewer1Org>
+	<my:reviewer1Phone>8509349255</my:reviewer1Phone>
+	<my:reviewer1email>lehrter.john@epa.gov</my:reviewer1email>
+	<my:reviewer2></my:reviewer2>
+	<my:reviewer2Org></my:reviewer2Org>
+	<my:reviewer2Phone></my:reviewer2Phone>
+	<my:reviewer2email></my:reviewer2email>
+	<my:tasks>SSWR 2.3A</my:tasks>
+	<my:selectProduct>Contributes to Product</my:selectProduct>
+	<my:product>Product</my:product>
+	<my:CSSRMSEcoModelTaskOptoins></my:CSSRMSEcoModelTaskOptoins>
+	<my:css241Options></my:css241Options>
+	<my:CSS621Options></my:CSS621Options>
+	<my:SHC1222Options></my:SHC1222Options>
+	<my:SHC2131Options></my:SHC2131Options>
+	<my:SHC2132Options></my:SHC2132Options>
+	<my:SHC2611Options></my:SHC2611Options>
+	<my:field33></my:field33>
+	<my:SSWR12BProj>Bayesian decision support system for sediment transport in coastal systems</my:SSWR12BProj>
+	<my:SSWR23AOptions></my:SSWR23AOptions>
+	<my:SSWR23DOptions></my:SSWR23DOptions>
+	<my:SHC2142Option>Report describing PNW community-based demonstration of Category 1 Decision Support Tools, based on recommendations from the SHC's Existing and New Tools Project. Specific products will include maps, databases, and queries addressing specific community sustainability issues</my:SHC2142Option>
+	<my:field36></my:field36>
+	<my:SSWR23B1Options></my:SSWR23B1Options>
+	<my:noTask>Enter task and product information here</my:noTask>
+	<my:QAPPTitle>Analysis of system productivity and metabolism in Florida estuaries</my:QAPPTitle>
+	<my:comments></my:comments>
+	<my:SSWR1.1COptions></my:SSWR1.1COptions>
+	<my:signatures2>
+		<my:signatures4></my:signatures4>
+		<my:signatures3></my:signatures3>
+	</my:signatures2>
+</my:myFields>

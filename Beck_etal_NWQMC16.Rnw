@@ -1,0 +1,527 @@
+\documentclass[serif]{beamer}
+\usetheme{Boadilla}
+\usetheme{Boadilla}
+\usepackage{graphicx}
+\usepackage[final]{animate}
+\usepackage{breqn}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{tikz}
+\usetikzlibrary{decorations.pathreplacing}
+\usetikzlibrary{shapes,arrows,positioning,shadows}
+\definecolor{links}{HTML}{2A1B81}
+\hypersetup{colorlinks,linkcolor=links,urlcolor=links}
+\usepackage{subfig}
+\usepackage{pgf}
+
+% load R libraries
+<<eval = T, echo = F, cache = F, message = F, warning = F>>=
+library(SWMPr)
+# devtools::load_all('M:/docs/SWMPr')
+library(RColorBrewer)
+library(scales)
+@
+
+% custom colors, do not cache
+<<mypal, echo = F, results = 'asis', cache = F>>=
+pal <- function(x) brewer.pal(x, 'GnBu')
+num_col <- 5
+
+for(i in 1:num_col){
+ 
+  col.nm <- paste0('mypal',i)
+  hexa <- paste0(gsub('#', '', pal(5)[i]))
+  cat(paste0('\\definecolor{', col.nm,'}{HTML}{',hexa,'}'))
+  
+}
+
+bg_col <- pal(num_col)[1]
+
+pdf('fig/back_tmp.pdf',bg = bg_col)
+frame()
+invisible(dev.off())
+@
+
+% my custom ggplot theme
+<<my_ggplot, echo = F, results = 'hide' , message = F>>=
+theme_mine <- function (base_size = 12, base_family = "") {
+  theme_bw(base_size = base_size, base_family = base_family) %+replace% 
+  theme(
+    plot.background = element_rect(fill='transparent', 
+      colour = NA),
+    panel.background = element_rect(fill='transparent', 
+      colour = NA),
+    legend.background = element_rect(fill='transparent', 
+      colour = NA),
+    strip.background = element_rect(fill = 
+        alpha(pal(5)[5],0.5)),
+    legend.key = element_rect(fill = 'transparent', 
+      colour = NA)
+    )   
+}
+
+# set as default
+theme_set(theme_mine())
+@
+ 
+% knitr and global options
+<<setup, include = F, cache = F>>=
+library(knitr)
+# global knitr options
+opts_chunk$set(fig.path = 'fig/', fig.align = 'center', fig.show = 'hold', message = FALSE, dev = 'pdf', dev.args = list(family = 'serif'), fig.pos = '!ht', warning = FALSE, cache = TRUE, prompt = TRUE, background = pal(num_col)[1])
+# chunk hook for par
+knit_hooks$set(par = function(before, options, envir){
+  if (before && options$fig.show!='none') par(mar=c(4,4,.1,.1))
+})
+#global R optoins
+options(replace.assign = TRUE, width = 60, digits = 1)
+@
+
+% colors and macros
+\setbeamercolor{title}{fg=mypal5} % main title
+\setbeamercolor{frametitle}{fg=mypal4, bg=mypal2} % frame titles
+\setbeamercolor{structure}{fg=mypal4} % bottom banner
+\setbeamercolor{normal text}{fg=mypal5}
+\usebackgroundtemplate{\includegraphics[height=\paperheight,width=\paperwidth]{fig/back_tmp.pdf}}
+
+\tikzstyle{block} = [rectangle, draw, text width=9em, text centered, rounded corners, minimum height=3em, minimum width=7em, top color = white, bottom color=brown!30,  drop shadow]
+
+\newcommand{\ShowSexpr}[1]{\texttt{{\char`\\}Sexpr\{#1\}}}
+
+\newcommand{\Bigtxt}[1]{\textbf{\textit{#1}}}
+
+\begin{document}
+
+\titlegraphic{
+\centerline{
+\fbox{\includegraphics[width=0.7\textwidth]{fig/swmprats_logo.png}}}
+}
+
+\title[NERRS Analysis Tools]{Integrated Analysis Tools for the NERRS System-Wide Monitoring Program Data}
+
+\author[M. Beck, T. O'Brien, M. Bundy]{Marcus W. Beck\inst{1} \and Todd D. O'Brien\inst{2} \and Marie H. Bundy\inst{2}}
+
+\date{May 5, 2016}
+
+\institute[]{\inst{1} USEPA NHEERL Gulf Ecology Division\\ Email: \href{mailto:beck.marcus@epa.gov}{beck.marcus@epa.gov} \and \inst{2} NERRS/NMFS/NOAA \\ Emails: \href{mailto:todd.obrien@noaa.gov}{todd.obrien@noaa.gov}, \href{mailto:marie.bundy@noaa.gov}{marie.bundy@noaa.gov}}
+
+%%%%%%
+\begin{frame}
+\vspace{-0.1in}
+\titlepage
+\end{frame}
+
+%%%%%%
+\begin{frame}{\includegraphics[width=0.05\paperwidth]{fig/muskrat.png}\hspace{0.07in}{\bf Overview}}
+\begin{itemize}
+\item Background of National Estuarine Research Reserves (NERRS) System-wide Monitoring Program (SWMP) \\~\\
+\item Genesis of ``SWMPrats.net'' community of practice \\~\\
+\item Features of SWMPrats.net \\~\\
+\begin{itemize}
+\item SWMPr \\~\\
+\item widgets \\~\\
+\item forum \\~\\
+\end{itemize}
+\item Continuing work, training, and engagement
+\end{itemize}
+\end{frame}
+
+%%%%%%
+\begin{frame}{What is NERRS/SWMP?}{}
+{\bf NERRS}\\
+National Estuarine Research Reserve System, established by Coastal Zone Management Act of 1972. Focus on \Bigtxt{long-term research}, \Bigtxt{monitoring}, \Bigtxt{education}, and \Bigtxt{stewardship} for more effective coastal management.\\~\\
+{\bf SWMP}\\
+System Wide Monitoring Program, initiated in 1995 to provide \Bigtxt{continuous monitoring} data at over 300 stations in in each of the 28 NERRS reserves \\~\\
+\end{frame}
+
+%%%%%%
+\begin{frame}{What is NERRS/SWMP?}
+\centerline{\includegraphics[width = 0.9\textwidth]{fig/NERRS_locations.png}}
+\tiny
+\flushright
+\href{http://nerrs.noaa.gov/ReservesMap.aspx}{http://nerrs.noaa.gov/ReservesMap.aspx}
+\end{frame}
+
+%%%%%%
+\begin{frame}{What is NERRS/SWMP?}
+Each reserve has fixed, continuous monitoring stations for \Bigtxt{water quality} (15 min), \Bigtxt{meteorology} (15 min), and \Bigtxt{nutrients} (monthly)\\~\\
+The parameters for a station are specific to the parameter type \\~\\
+\begin{columns}[t]
+\begin{column}{0.3\textwidth}
+\Bigtxt{Water quality} \\~\\
+\Sexpr{paste(gsub('_', '\\_', grep('^f_', param_names()$wq, invert = T, value = T), fixed = T), collapse = ', ')}
+\end{column}
+\begin{column}{0.3\textwidth}
+\Bigtxt{Meteorology} \\~\\
+\Sexpr{paste(gsub('_', '\\_', grep('^f_', param_names()$met, invert = T, value = T), fixed = T), collapse = ', ')} \\~\\
+\end{column}
+\begin{column}{0.3\textwidth}
+\Bigtxt{Nutrients} \\~\\
+\Sexpr{paste(gsub('_', '\\_', grep('^f_', param_names()$nut, invert = T, value = T), fixed = T), collapse = ', ')}
+\end{column}
+\end{columns}
+\end{frame}
+
+%%%%%%
+\begin{frame}[t]{What is NERRS/SWMP?}
+Data maintained by the Centralized Data Management Office (\href{http://cdmo.baruch.sc.edu/}{CDMO})\\~\\
+\centerline{\includegraphics[width = \textwidth]{fig/cdmo_front.png}}
+\end{frame}
+
+%%%%%%
+\begin{frame}{What is NERRS/SWMP?}
+Hallmarks of SWMP - Standardized instruments and protocols, rigorous QAQC, very large dataset \\~\\
+\begin{itemize}
+\item All 28 reserves use identical instruments and standardized protocols \\~\\
+\item All data are managed by the NERRS Centralized Data Management Office \\~\\
+\item Database meets the definition of ``big data''
+\end{itemize}
+\end{frame}
+
+%%%%%%
+\begin{frame}[t]{What is NERRS/SWMP?}
+As of April 30th, $>$ 63 million SWMP  data records available from CDMO\\~\\
+Raw data will look like this...\\~\\
+\centerline{\includegraphics[width = 0.9\textwidth]{fig/qaqc_ex.png}}
+\end{frame}
+
+%%%%%%
+\begin{frame}{What are the problems?}
+An invaluable data source but no recent comparative analyses between systems \\~\\
+NERRS researchers, managers, and technicians need more tools for trend analysis \\~\\
+Some specific issues:\\~\\
+\begin{itemize}
+\item Knowing what data to use and how to obtain
+\item Dealing with QAQC columns or removing `bad' observations
+\item Combining data for comparison
+\item Issues inherent with time series, e.g., signal vs. noise, data quantity
+\end{itemize}
+\end{frame}
+
+%%%%%%
+\begin{frame}{What are the needs?}
+Several needs were identified given the challenges:\\~\\
+\begin{itemize}
+\item Understand regional and national trends while retaining the ability to determine local trends \\~\\
+\item Train users \\~\\
+\item Maintain a versatile and evolving data analysis approach \\~\\
+\item Create a community of practice
+\end{itemize}
+\end{frame}
+
+%%%%%%
+\begin{frame}{\includegraphics[width=0.05\paperwidth]{fig/muskrat.png}\hspace{0.07in}{\bf Genesis of SWMPrats}}
+\centerline{\fbox{\includegraphics[width = 0.95\textwidth]{fig/bg_main.jpg}}}
+\vspace{0.2in}
+One-day training workshop at 2014 annual meeting \\~\\
+\begin{itemize}
+\item Attended by over 70 NERRS staff, representing 19 of 28 reserves \\~\\
+\item General focus on time series analysis, simple applications with SWMP data \\~\\
+\item Pre/post workshop materials, including an R package for SWMP
+\end{itemize}
+\end{frame}
+
+%%%%%%
+\begin{frame}{\includegraphics[width=0.05\paperwidth]{fig/muskrat.png}\hspace{0.07in}{\bf Genesis of SWMPrats}}
+\centerline{\fbox{\includegraphics[width = 0.95\textwidth]{fig/swmprats_logo.png}}}
+\vspace{0.2in}
+A working group was formed from this meeting \\~\\
+\Large
+\Bigtxt{S}ystem-\Bigtxt{W}ide \Bigtxt{M}onitoring \Bigtxt{P}rogram \Bigtxt{R}esources for the \Bigtxt{A}nalysis of \Bigtxt{T}ime \Bigtxt{S}eries \\~\\
+\normalsize
+\href{http://swmprats.net}{SWMPrats.net} is our base of operations...
+\end{frame}
+
+%%%%%%
+\begin{frame}{\includegraphics[width=0.05\paperwidth]{fig/muskrat.png}\hspace{0.07in}{\bf SWMPrats.net}}
+\centerline{A website with information and tools for SWMP data analysis}
+\vspace{0.1in}
+\centerline{\fbox{\includegraphics[width = 0.7\textwidth]{fig/swmprats_home.png}}}
+\end{frame}
+
+%%%%%%
+\begin{frame}[fragile]{\includegraphics[width=0.05\paperwidth]{fig/muskrat.png}\hspace{0.07in}{\bf SWMPrats.net: The SWMPr package}}
+\centerline{\includegraphics[width = 0.75\textwidth]{fig/swmpr_logo.png}}
+\vspace{0.15in}
+SWMPr is an open-source R package described on the website, v2.1.5 is \href{http://cran.r-project.org/web/packages/SWMPr/index.html}{now available}
+<<eval = F>>=
+# install/load from R
+install.packages('SWMPr')
+library(SWMPR)
+@
+\end{frame}
+
+%%%%%%
+\begin{frame}[fragile]{\includegraphics[width=0.05\paperwidth]{fig/muskrat.png}\hspace{0.07in}{\bf SWMPrats.net: The SWMPr package}}
+The software addresses the unglamorous but necessary challenges of analyzing time series, specific to SWMP \\~\\
+What are some challenges? \\~\\
+\begin{columns}
+\begin{column}{0.6\textwidth}
+\begin{itemize}
+\item Dealing with `bad' data \\~\\
+\item Subsetting by date ranges, parameters \\~\\
+\item Combining data from different sites \\~\\
+\item Standardizing time steps \\~\\
+\item ...and analysis
+\end{itemize}
+\end{column}
+\begin{column}{0.4\textwidth}
+\centerline{\includegraphics[width = 0.9\textwidth]{fig/qaqc_ex.png}}
+\end{column}
+\end{columns}
+\end{frame}
+
+%%%%%%
+\begin{frame}[fragile]{\includegraphics[width=0.05\paperwidth]{fig/muskrat.png}\hspace{0.07in}{\bf SWMPrats.net: The SWMPr package}}
+Package description published in The R Journal this year \\~\\ 
+\centerline{\fbox{\includegraphics[width=0.85\textwidth]{fig/SWMPr_manu.png}}}
+\end{frame}
+
+%%%%%%
+\begin{frame}[t]{What can SWMPr do?}
+SWMPr functions are grouped into three categories that describe their use in the `data workflow' \\~\\
+\begin{columns}[t]
+\begin{column}{0.3\textwidth}
+\Bigtxt{Retrieve}\\~\\
+\small{
+\texttt{all\_params}\\
+\texttt{all\_params_dtrng}\\
+\texttt{import\_local}\\
+\texttt{import\_remote}\\
+\texttt{single\_param}\\
+\texttt{site\_codes}\\
+\texttt{site\_codes\_ind}
+}
+\end{column}
+\begin{column}{0.3\textwidth}
+\Bigtxt{Organize}\\~\\
+\small{
+\texttt{comb}\\
+\texttt{qaqc}\\
+\texttt{qaqcchk}\\
+\texttt{rem\_reps}\\
+\texttt{setstep}\\
+\texttt{subset}\\
+}
+\end{column}
+\begin{column}{0.3\textwidth}
+\Bigtxt{Analyze}\\~\\
+\small{
+\texttt{aggreswmp}\\
+\texttt{aggremetab}\\
+\texttt{ecometab}\\
+\texttt{decomp}\\
+\texttt{decomp\_cj}\\
+\texttt{hist}\\
+\texttt{lines}\\
+\texttt{na.approx}\\
+\texttt{plot}\\
+\texttt{plot\_metab}\\
+\texttt{plot\_summary}\\
+\texttt{smoother}\\
+}
+\end{column}
+\end{columns}
+\end{frame}
+
+%%%%%%
+\begin{frame}[fragile]{\includegraphics[width=0.05\paperwidth]{fig/muskrat.png}\hspace{0.07in}{\bf SWMPrats.net: The SWMPr package}}
+Proof of concept, import and combine wq and weather data from Apalachicola Bay
+<<>>=
+# import data
+data(apaebmet)
+data(apacpwq)
+met <- apaebmet
+wq <- apacpwq
+
+# combine, two hours time step
+# only overlapping date ranges
+dat <- comb(met, wq, timestep = 120, 
+  method = 'intersect')
+@
+Try doing the same by hand...
+\end{frame}
+
+%%%%%
+\begin{frame}[fragile]{\includegraphics[width=0.05\paperwidth]{fig/muskrat.png}\hspace{0.07in}{\bf SWMPrats.net: The SWMPr package}}
+Example: fill missing data with \texttt{na.approx} \\~\\
+<<'/filled', fig.width = 8, fig.height = 2, size = 'scriptsize', par = T, , echo = F, out.width = '0.85\\textwidth'>>=
+# import, organize
+data(apadbwq)
+dat <- qaqc(apadbwq)
+dat <- subset(dat, select = 'do_mgl', 
+  subset = c('2013-01-22 00:00', '2013-01-26 00:00')
+  )
+
+# interpolate, plot
+filled <- na.approx(dat, params = 'do_mgl', maxgap =100)
+plot(filled, col = 'red'); lines(dat, lwd = 2)
+@
+Example: smooth data with \texttt{smoother} \\~\\
+<<'/smooth', fig.width = 8, fig.height = 2, size = 'scriptsize', par = T, echo = F, out.width = '0.85\\textwidth'>>=
+# import, organize
+data(apadbwq)
+dat <- qaqc(apadbwq)
+dat <- subset(dat, select = 'do_mgl', 
+  subset = c('2012-07-09 00:00', '2012-07-24 00:00')
+  )
+
+# smooth, plot
+dat_smooth <- smoother(dat, window = 50, params = 'do_mgl')
+plot(dat); lines(dat_smooth, col = 'red', lwd = 2)
+@
+\end{frame}
+
+%%%%%%
+\begin{frame}[fragile]{\includegraphics[width=0.05\paperwidth]{fig/muskrat.png}\hspace{0.07in}{\bf SWMPrats.net: The SWMPr package}}
+Example: time series decomposition with \texttt{decomp\_cj} (chl-a at cbmocnut)\\~\\
+<<'decomp_dep', eval = T, echo = F, fig.height = 5, fig.width = 8, out.width = '0.85\\textwidth'>>=
+# import, organize
+load(file = url('https://s3.amazonaws.com/swmpalldata/cbmocnut.RData'))
+dat <- cbmocnut
+dat <- subset(dat, select = 'chla_n')
+dat$chla_n <- log(dat$chla_n)
+
+# additive decompision of chl
+out <- decomp_cj(dat, 'chla_n', type = 'add')
+out <- out + theme_mine()
+out
+@
+\end{frame}
+
+%%%%%%
+\begin{frame}[fragile]{\includegraphics[width=0.05\paperwidth]{fig/muskrat.png}\hspace{0.07in}{\bf SWMPrats.net: The SWMPr package}}
+Example: estimate ecosystem metabolism with \texttt{ecometab} (apadbwq)
+<<'/ecometab_dep', echo = F, cache = T>>=
+## import water quality and weather data, combine
+data(apaebmet)
+data(apadbwq)
+met <- apaebmet
+wq <- apadbwq
+
+dat <- comb(wq, met)
+res <- ecometab(dat, metab_units = 'grams')
+@
+<<'/ecometab1', fig.width = 8, fig.height = 2.5, out.width = '0.95\\textwidth', echo = F>>=
+plot_metab(res, by = 'months') + theme_mine() + scale_y_continuous('Monthly', limits = c(-10, 10)) + theme(axis.title.x = element_blank())
+@
+<<'/ecometab2', fig.width = 8, fig.height = 2.5, out.width = '0.95\\textwidth', echo = F>>=
+plot_metab(res, by = 'quarters') + theme_mine() + scale_y_continuous('Quarterly', limits = c(-10, 10)) + theme(axis.title.x = element_blank())
+@
+\end{frame}
+
+%%%%%%
+\begin{frame}[fragile]{\includegraphics[width=0.05\paperwidth]{fig/muskrat.png}\hspace{0.07in}{\bf SWMPrats.net: Widgets}}
+The most common question - has there been a change over time at my site? \\~\\
+The functions in the package can help answer this very general question...\\~\\
+...but it's often easier to interactively evaluate the data! \\~\\
+Two shiny applications, hosted on \href{http://www.shinyapps.io/}{shinyapps.io}, allow users to visualize trends in SWMP data \\~\\
+These apps were created with SWMPr functions or use them `reactively'
+\end{frame}
+
+%%%%%%
+\begin{frame}[t, fragile]{\includegraphics[width=0.05\paperwidth]{fig/muskrat.png}\hspace{0.07in}{\bf SWMPrats.net: Widgets}}
+SWMP summary plots: \href{https://beckmw.shinyapps.io/swmp_summary/}{https://beckmw.shinyapps.io/swmp\_summary/}\\~\\
+\centerline{\includegraphics[width = 0.62\textwidth]{fig/swmp_summary.png}}
+\end{frame}
+
+%%%%%%
+\begin{frame}[t, fragile]{\includegraphics[width=0.05\paperwidth]{fig/muskrat.png}\hspace{0.07in}{\bf SWMPrats.net: Widgets}}
+SWMP trends map: \href{https://beckmw.shinyapps.io/swmp_comp/}{https://beckmw.shinyapps.io/swmp\_comp/}\\~\\
+\centerline{\includegraphics[width = 0.82\textwidth]{fig/swmp_comp.png}}
+\end{frame}
+
+%%%%%%
+\begin{frame}[t, fragile]{\includegraphics[width=0.05\paperwidth]{fig/muskrat.png}\hspace{0.07in}{\bf SWMPrats.net: Widgets}}
+SWMP aggregation: \href{https://beckmw.shinyapps.io/swmp_agg/}{https://beckmw.shinyapps.io/swmp\_agg/}\\~\\
+\centerline{\includegraphics[width = 0.7\textwidth]{fig/swmp_agg.png}}
+\end{frame}
+
+%%%%%%
+\begin{frame}[t, fragile]{\includegraphics[width=0.05\paperwidth]{fig/muskrat.png}\hspace{0.07in}{\bf SWMPrats.net: Forum}}
+\centerline{Last but not least, a discussion \href{http://swmprats.net/forum}{forum} for all things analytical}
+\vspace{0.1in}
+\centerline{\fbox{\includegraphics[width = 0.75\textwidth]{fig/swmprats_forum.png}}}
+\end{frame}
+
+%%%%%%
+\begin{frame}[t, fragile]{\includegraphics[width=0.05\paperwidth]{fig/muskrat.png}\hspace{0.07in}{\bf SWMPrats.net: Forum}}
+\centerline{Last but not least, a discussion \href{http://swmprats.net/forum}{forum} for all things analytical}
+\vspace{0.1in}
+\centerline{\fbox{\includegraphics[width = 0.75\textwidth]{fig/POTM.png}}}
+\end{frame}
+
+%%%%%%
+\begin{frame}[fragile]{\includegraphics[width=0.05\paperwidth]{fig/muskrat.png}\hspace{0.07in}{\bf Continuing work and engagement}}
+SWMPrats.net is in its infancy but already seeing heavy use \\~\\
+\begin{itemize}
+\item 3140 downloads of SWMPr to date
+\item Apps have been used 160 hours in the last three months \\~\\
+\end{itemize}
+Additional training workshops Oct. 2015, planned for 2016 \\~\\
+\begin{columns}
+\begin{column}{0.45\textwidth}
+\centerline{\fbox{\includegraphics[width = 0.85\textwidth]{fig/work1.jpg}}}
+\end{column}
+\begin{column}{0.45\textwidth}
+\centerline{\fbox{\includegraphics[width = 0.64\textwidth]{fig/work2.jpg}}}
+\end{column}
+\end{columns}
+\end{frame}
+
+%%%%%%
+\begin{frame}[t, fragile]{\includegraphics[width=0.05\paperwidth]{fig/muskrat.png}\hspace{0.07in}{\bf Continuing work and engagement}}
+\begin{columns}
+\begin{column}{0.53\textwidth}
+\centerline{\fbox{\includegraphics[width = \textwidth]{fig/swmprats_logo.png}}}
+\end{column}
+\begin{column}{0.43 \textwidth}
+\centerline{\fbox{\includegraphics[width = 0.78\textwidth]{fig/swmpr_logo.png}}}
+\end{column}
+\end{columns}
+\vspace{0.2in}
+SWMPrats is an ad hoc group formed organically from the NERRS community \\~\\
+Success depends on:\\~\\
+\begin{itemize}
+\item Healthy discourse between the creators and users \\~\\
+\item In-person training workshops\\~\\
+\item Benefits of open-source resources
+\end{itemize}
+\end{frame}
+
+%%%%%%
+\begin{frame}[t, fragile]{\includegraphics[width=0.05\paperwidth]{fig/muskrat.png}\hspace{0.07in}{\bf Continuing work and engagement}}
+\begin{columns}
+\begin{column}{0.53\textwidth}
+\centerline{\fbox{\includegraphics[width = \textwidth]{fig/swmprats_logo.png}}}
+\end{column}
+\begin{column}{0.43 \textwidth}
+\centerline{\fbox{\includegraphics[width = 0.78\textwidth]{fig/swmpr_logo.png}}}
+\end{column}
+\end{columns}
+\vspace{0.2in}
+\begin{itemize}
+\item SWMP data are now more accessible and analyses are tractable\\~\\
+\item Site, regional, and national comparisons provide capacity to develop understanding of climate and anthropogenic drivers of change in estuarine systems \\~\\
+\item As the dataset expands, these tools will facilitate evaluation of long-term trends within and between locations
+\end{itemize}
+\end{frame}
+
+%%%%%%
+\begin{frame}[t, fragile]{\includegraphics[width=0.05\paperwidth]{fig/muskrat.png}\hspace{0.07in}{\bf Continuing work and engagement}}
+\begin{columns}
+\begin{column}{0.53\textwidth}
+\centerline{\fbox{\includegraphics[width = \textwidth]{fig/swmprats_logo.png}}}
+\end{column}
+\begin{column}{0.43 \textwidth}
+\centerline{\fbox{\includegraphics[width = 0.78\textwidth]{fig/swmpr_logo.png}}}
+\end{column}
+\end{columns}
+\vspace{0.2in}
+Contacts: \includegraphics[width=0.05\paperwidth]{fig/muskrat2.png}\hspace{0.05in}\href{mailto:beck.marcus@epa.gov}{beck.marcus@epa.gov}, \includegraphics[width=0.05\paperwidth]{fig/muskrat2.png}\hspace{0.05in}\href{mailto:todd.obrien@noaa.gov}{todd.obrien@noaa.gov}, \includegraphics[width=0.05\paperwidth]{fig/muskrat2.png}\hspace{0.05in}\href{mailto:marie.bundy@noaa.gov}{marie.bundy@noaa.gov}  \\~\\
+To get this presentation: \href{https://github.com/fawda123/NWQMC_16}{https://github.com/fawda123/NWQMC\_16} \\~\\
+Apps: \href{http://swmprats.net/swmp-widgets/summary-plots}{http://swmprats.net/swmp-widgets/summary-plots}, \href{http://swmprats.net/swmp-widgets/trends-maps}{http://swmprats.net/swmp-widgets/trends-maps}, \href{http://swmprats.net/swmp-widgets/swmp-widget-aggregation}{http://swmprats.net/swmp-widgets/swmp-widget-aggregation} \\~\\
+Visit the development site for the most recent version of SWMPr: \href{https://github.com/fawda123/SWMPr}{https://github.com/fawda123/SWMPr}\\~\\
+\end{frame}
+
+\end{document}

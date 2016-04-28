@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.8.29)  27 APR 2016 18:50
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.8.29)  28 APR 2016 11:44
 entering extended mode
 **Beck_etal_NWQMC16.tex
 (M:\presentations\NWQMC_16\Beck_etal_NWQMC16.tex
@@ -1530,6 +1530,10 @@ Package pdftex.def Info: fig/back_tmp.pdf used on input line 125.
  [2
 
  <M:/presentations/NWQMC_16/fig/muskrat.png>]
+File: fig/muskrat.png Graphic file (type png)
+ <use fig/muskrat.png>
+Package pdftex.def Info: fig/muskrat.png used on input line 133.
+(pdftex.def)             Requested size: 18.21088pt x 13.87004pt.
 File: fig/back_tmp.pdf Graphic file (type pdf)
  <use fig/back_tmp.pdf>
 Package pdftex.def Info: fig/back_tmp.pdf used on input line 133.
@@ -1537,127 +1541,146 @@ Package pdftex.def Info: fig/back_tmp.pdf used on input line 133.
  [3
 
 ]
-<fig/NERRS_locations.png, id=139, 725.71124pt x 446.41782pt>
+<fig/NERRS_locations.png, id=138, 725.71124pt x 446.41782pt>
 File: fig/NERRS_locations.png Graphic file (type png)
 
 <use fig/NERRS_locations.png>
 Package pdftex.def Info: fig/NERRS_locations.png used on input line 141.
 (pdftex.def)             Requested size: 308.06367pt x 189.50368pt.
+File: fig/muskrat.png Graphic file (type png)
+ <use fig/muskrat.png>
+Package pdftex.def Info: fig/muskrat.png used on input line 141.
+(pdftex.def)             Requested size: 18.21088pt x 13.87004pt.
 File: fig/back_tmp.pdf Graphic file (type pdf)
  <use fig/back_tmp.pdf>
 Package pdftex.def Info: fig/back_tmp.pdf used on input line 141.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
- [4
+
+[4
 
  <M:/presentations/NWQMC_16/fig/NERRS_locations.png>]
+File: fig/muskrat.png Graphic file (type png)
+ <use fig/muskrat.png>
+Package pdftex.def Info: fig/muskrat.png used on input line 160.
+(pdftex.def)             Requested size: 18.21088pt x 13.87004pt.
 File: fig/back_tmp.pdf Graphic file (type pdf)
- <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 161.
+
+<use fig/back_tmp.pdf>
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 160.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
  [5
 
 ]
-<fig/cdmo_front.png, id=194, 730.22812pt x 406.51875pt>
+<fig/cdmo_front.png, id=193, 730.22812pt x 406.51875pt>
 File: fig/cdmo_front.png Graphic file (type png)
 
 <use fig/cdmo_front.png>
-Package pdftex.def Info: fig/cdmo_front.png used on input line 167.
-(pdftex.def)             Requested size: 342.2953pt x 190.55519pt.
+Package pdftex.def Info: fig/cdmo_front.png used on input line 166.
+(pdftex.def)             Requested size: 308.06367pt x 171.49966pt.
+File: fig/muskrat.png Graphic file (type png)
+ <use fig/muskrat.png>
+Package pdftex.def Info: fig/muskrat.png used on input line 166.
+(pdftex.def)             Requested size: 18.21088pt x 13.87004pt.
 File: fig/back_tmp.pdf Graphic file (type pdf)
  <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 167.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 166.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
  [6
 
  <M:/presentations/NWQMC_16/fig/cdmo_front.png>]
+File: fig/muskrat.png Graphic file (type png)
+ <use fig/muskrat.png>
+Package pdftex.def Info: fig/muskrat.png used on input line 176.
+(pdftex.def)             Requested size: 18.21088pt x 13.87004pt.
 File: fig/back_tmp.pdf Graphic file (type pdf)
- <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 177.
+
+<use fig/back_tmp.pdf>
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 176.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
  [7
 
 ]
-<fig/qaqc_ex.png, id=248, 630.10406pt x 304.13625pt>
+<fig/qaqc_ex.png, id=247, 630.10406pt x 304.13625pt>
 File: fig/qaqc_ex.png Graphic file (type png)
  <use fig/qaqc_ex.png>
-Package pdftex.def Info: fig/qaqc_ex.png used on input line 184.
-(pdftex.def)             Requested size: 308.06367pt x 148.69392pt.
-File: fig/back_tmp.pdf Graphic file (type pdf)
+Package pdftex.def Info: fig/qaqc_ex.png used on input line 183.
+(pdftex.def)             Requested size: 290.9531pt x 140.43805pt.
+File: fig/muskrat.png Graphic file (type png)
 
-<use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 184.
+<use fig/muskrat.png>
+Package pdftex.def Info: fig/muskrat.png used on input line 183.
+(pdftex.def)             Requested size: 18.21088pt x 13.87004pt.
+File: fig/back_tmp.pdf Graphic file (type pdf)
+ <use fig/back_tmp.pdf>
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 183.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
  [8
 
  <M:/presentations/NWQMC_16/fig/qaqc_ex.png>]
+File: fig/muskrat.png Graphic file (type png)
+ <use fig/muskrat.png>
+Package pdftex.def Info: fig/muskrat.png used on input line 194.
+(pdftex.def)             Requested size: 18.21088pt x 13.87004pt.
 File: fig/back_tmp.pdf Graphic file (type pdf)
-
-<use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 197.
+ <use fig/back_tmp.pdf>
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 194.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
  [9
 
 ]
-File: fig/back_tmp.pdf Graphic file (type pdf)
- <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 208.
-(pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
- [10
-
-]
-<fig/bg_main.jpg, id=328, 960.58875pt x 167.62625pt>
+<fig/bg_main.jpg, id=301, 960.58875pt x 167.62625pt>
 File: fig/bg_main.jpg Graphic file (type jpg)
  <use fig/bg_main.jpg>
-Package pdftex.def Info: fig/bg_main.jpg used on input line 220.
+Package pdftex.def Info: fig/bg_main.jpg used on input line 206.
 (pdftex.def)             Requested size: 325.17949pt x 56.74405pt.
 File: fig/muskrat.png Graphic file (type png)
 
 <use fig/muskrat.png>
-Package pdftex.def Info: fig/muskrat.png used on input line 220.
+Package pdftex.def Info: fig/muskrat.png used on input line 206.
 (pdftex.def)             Requested size: 18.21088pt x 13.87004pt.
 File: fig/back_tmp.pdf Graphic file (type pdf)
  <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 220.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 206.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
- [11
+ [10
 
  <M:/presentations/NWQMC_16/fig/bg_main.jpg>]
 File: fig/swmprats_logo.png Graphic file (type png)
  <use fig/swmprats_logo.png>
-Package pdftex.def Info: fig/swmprats_logo.png used on input line 231.
+Package pdftex.def Info: fig/swmprats_logo.png used on input line 217.
 (pdftex.def)             Requested size: 325.17949pt x 64.0156pt.
 File: fig/muskrat.png Graphic file (type png)
  <use fig/muskrat.png>
-Package pdftex.def Info: fig/muskrat.png used on input line 231.
+Package pdftex.def Info: fig/muskrat.png used on input line 217.
 (pdftex.def)             Requested size: 18.21088pt x 13.87004pt.
 File: fig/back_tmp.pdf Graphic file (type pdf)
 
 <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 231.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 217.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
- [12
+ [11
 
 ]
-<fig/swmprats_home.png, id=382, 716.6775pt x 542.025pt>
+<fig/swmprats_home.png, id=356, 716.6775pt x 542.025pt>
 File: fig/swmprats_home.png Graphic file (type png)
 
 <use fig/swmprats_home.png>
-Package pdftex.def Info: fig/swmprats_home.png used on input line 238.
+Package pdftex.def Info: fig/swmprats_home.png used on input line 224.
 (pdftex.def)             Requested size: 239.60567pt x 181.20938pt.
 File: fig/muskrat.png Graphic file (type png)
  <use fig/muskrat.png>
-Package pdftex.def Info: fig/muskrat.png used on input line 238.
+Package pdftex.def Info: fig/muskrat.png used on input line 224.
 (pdftex.def)             Requested size: 18.21088pt x 13.87004pt.
 File: fig/back_tmp.pdf Graphic file (type pdf)
  <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 238.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 224.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
 
-[13
+[12
 
  <M:/presentations/NWQMC_16/fig/swmprats_home.png>]
 (M:\presentations\NWQMC_16\Beck_etal_NWQMC16.vrb
-<fig/swmpr_logo.png, id=410, 660.066pt x 209.583pt>
+<fig/swmpr_logo.png, id=383, 660.066pt x 209.583pt>
 File: fig/swmpr_logo.png Graphic file (type png)
  <use fig/swmpr_logo.png>
 Package pdftex.def Info: fig/swmpr_logo.png used on input line 2.
@@ -1668,13 +1691,13 @@ LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10.95> not available
 File: fig/muskrat.png Graphic file (type png)
 
 <use fig/muskrat.png>
-Package pdftex.def Info: fig/muskrat.png used on input line 254.
+Package pdftex.def Info: fig/muskrat.png used on input line 240.
 (pdftex.def)             Requested size: 18.21088pt x 13.87004pt.
 File: fig/back_tmp.pdf Graphic file (type pdf)
  <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 254.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 240.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
- [14
+ [13
 
  <M:/presentations/NWQMC_16/fig/swmpr_logo.png>] (M:\presentations\NWQMC_16\Bec
 k_etal_NWQMC16.vrb
@@ -1686,61 +1709,54 @@ Package pdftex.def Info: fig/qaqc_ex.png used on input line 15.
 )
 File: fig/muskrat.png Graphic file (type png)
  <use fig/muskrat.png>
-Package pdftex.def Info: fig/muskrat.png used on input line 274.
+Package pdftex.def Info: fig/muskrat.png used on input line 260.
 (pdftex.def)             Requested size: 18.21088pt x 13.87004pt.
 File: fig/back_tmp.pdf Graphic file (type pdf)
  <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 274.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 260.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
- [15
+ [14
 
 ]
 (M:\presentations\NWQMC_16\Beck_etal_NWQMC16.vrb
-<fig/SWMPr_manu.png, id=467, 526.96875pt x 298.86656pt>
+<fig/SWMPr_manu.png, id=441, 526.96875pt x 298.86656pt>
 File: fig/SWMPr_manu.png Graphic file (type png)
 
 <use fig/SWMPr_manu.png>
 Package pdftex.def Info: fig/SWMPr_manu.png used on input line 3.
-(pdftex.def)             Requested size: 290.9531pt x 165.02011pt.
+(pdftex.def)             Requested size: 256.72147pt x 145.60222pt.
 )
 File: fig/muskrat.png Graphic file (type png)
  <use fig/muskrat.png>
-Package pdftex.def Info: fig/muskrat.png used on input line 280.
+Package pdftex.def Info: fig/muskrat.png used on input line 266.
 (pdftex.def)             Requested size: 18.21088pt x 13.87004pt.
 File: fig/back_tmp.pdf Graphic file (type pdf)
  <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 280.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 266.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
- [16
+ [15
 
  <M:/presentations/NWQMC_16/fig/SWMPr_manu.png>]
-File: fig/back_tmp.pdf Graphic file (type pdf)
- <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 327.
-(pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
- [17
-
-]
 (M:\presentations\NWQMC_16\Beck_etal_NWQMC16.vrb)
 File: fig/muskrat.png Graphic file (type png)
  <use fig/muskrat.png>
-Package pdftex.def Info: fig/muskrat.png used on input line 349.
+Package pdftex.def Info: fig/muskrat.png used on input line 288.
 (pdftex.def)             Requested size: 18.21088pt x 13.87004pt.
 File: fig/back_tmp.pdf Graphic file (type pdf)
 
 <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 349.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 288.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
- [18
+ [16
 
 ] (M:\presentations\NWQMC_16\Beck_etal_NWQMC16.vrb
-<fig//filled-1.pdf, id=547, 578.16pt x 144.54pt>
+<fig//filled-1.pdf, id=495, 578.16pt x 144.54pt>
 File: fig//filled-1.pdf Graphic file (type pdf)
  <use fig//filled-1.pdf>
 Package pdftex.def Info: fig//filled-1.pdf used on input line 6.
 (pdftex.def)             Requested size: 290.9531pt x 72.73737pt.
 
-<fig//smooth-1.pdf, id=548, 578.16pt x 144.54pt>
+<fig//smooth-1.pdf, id=496, 578.16pt x 144.54pt>
 File: fig//smooth-1.pdf Graphic file (type pdf)
  <use fig//smooth-1.pdf>
 Package pdftex.def Info: fig//smooth-1.pdf used on input line 17.
@@ -1749,18 +1765,18 @@ Package pdftex.def Info: fig//smooth-1.pdf used on input line 17.
 File: fig/muskrat.png Graphic file (type png)
 
 <use fig/muskrat.png>
-Package pdftex.def Info: fig/muskrat.png used on input line 375.
+Package pdftex.def Info: fig/muskrat.png used on input line 314.
 (pdftex.def)             Requested size: 18.21088pt x 13.87004pt.
 File: fig/back_tmp.pdf Graphic file (type pdf)
  <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 375.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 314.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
- [19
+ [17
 
  <M:/presentations/NWQMC_16/fig//filled-1.pdf> <M:/presentations/NWQMC_16/fig//
 smooth-1.pdf>]
 (M:\presentations\NWQMC_16\Beck_etal_NWQMC16.vrb
-<fig/decomp_dep-1.pdf, id=586, 578.16pt x 361.35pt>
+<fig/decomp_dep-1.pdf, id=533, 578.16pt x 361.35pt>
 File: fig/decomp_dep-1.pdf Graphic file (type pdf)
  <use fig/decomp_dep-1.pdf>
 Package pdftex.def Info: fig/decomp_dep-1.pdf used on input line 6.
@@ -1768,24 +1784,24 @@ Package pdftex.def Info: fig/decomp_dep-1.pdf used on input line 6.
 )
 File: fig/muskrat.png Graphic file (type png)
 <use fig/muskrat.png>
-Package pdftex.def Info: fig/muskrat.png used on input line 390.
+Package pdftex.def Info: fig/muskrat.png used on input line 329.
 (pdftex.def)             Requested size: 18.21088pt x 13.87004pt.
 File: fig/back_tmp.pdf Graphic file (type pdf)
  <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 390.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 329.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
- [20
+ [18
 
  <M:/presentations/NWQMC_16/fig/decomp_dep-1.pdf>] (M:\presentations\NWQMC_16\B
 eck_etal_NWQMC16.vrb
-<fig//ecometab1-1.pdf, id=621, 578.16pt x 180.675pt>
+<fig//ecometab1-1.pdf, id=568, 578.16pt x 180.675pt>
 File: fig//ecometab1-1.pdf Graphic file (type pdf)
 
 <use fig//ecometab1-1.pdf>
 Package pdftex.def Info: fig//ecometab1-1.pdf used on input line 7.
 (pdftex.def)             Requested size: 325.17949pt x 101.6184pt.
 
-<fig//ecometab2-1.pdf, id=622, 578.16pt x 180.675pt>
+<fig//ecometab2-1.pdf, id=569, 578.16pt x 180.675pt>
 File: fig//ecometab2-1.pdf Graphic file (type pdf)
 
 <use fig//ecometab2-1.pdf>
@@ -1794,88 +1810,105 @@ Package pdftex.def Info: fig//ecometab2-1.pdf used on input line 17.
 )
 File: fig/muskrat.png Graphic file (type png)
  <use fig/muskrat.png>
-Package pdftex.def Info: fig/muskrat.png used on input line 416.
+Package pdftex.def Info: fig/muskrat.png used on input line 355.
 (pdftex.def)             Requested size: 18.21088pt x 13.87004pt.
 File: fig/back_tmp.pdf Graphic file (type pdf)
  <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 416.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 355.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
 
-[21
+[19
 
  <M:/presentations/NWQMC_16/fig//ecometab1-1.pdf> <M:/presentations/NWQMC_16/fi
-g//ecometab2-1.pdf>] (M:\presentations\NWQMC_16\Beck_etal_NWQMC16.vrb)
+g//ecometab2-1.pdf>] (M:\presentations\NWQMC_16\Beck_etal_NWQMC16.vrb
+<fig/swmp_summary.png, id=607, 747.54282pt x 649.67719pt>
+File: fig/swmp_summary.png Graphic file (type png)
+
+<use fig/swmp_summary.png>
+Package pdftex.def Info: fig/swmp_summary.png used on input line 7.
+(pdftex.def)             Requested size: 97.55482pt x 84.77821pt.
+
+<fig/swmp_comp.png, id=608, 954.56625pt x 627.09282pt>
+File: fig/swmp_comp.png Graphic file (type png)
+ <use fig/swmp_comp.png>
+Package pdftex.def Info: fig/swmp_comp.png used on input line 10.
+(pdftex.def)             Requested size: 97.55482pt x 64.08127pt.
+
+<fig/swmp_agg.png, id=609, 825.0825pt x 638.385pt>
+File: fig/swmp_agg.png Graphic file (type png)
+ <use fig/swmp_agg.png>
+Package pdftex.def Info: fig/swmp_agg.png used on input line 13.
+(pdftex.def)             Requested size: 97.55482pt x 75.47293pt.
+)
 File: fig/muskrat.png Graphic file (type png)
 
 <use fig/muskrat.png>
-Package pdftex.def Info: fig/muskrat.png used on input line 425.
+Package pdftex.def Info: fig/muskrat.png used on input line 373.
 (pdftex.def)             Requested size: 18.21088pt x 13.87004pt.
 File: fig/back_tmp.pdf Graphic file (type pdf)
  <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 425.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 373.
+(pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
+ [20
+
+ <M:/presentations/NWQMC_16/fig/swmp_summary.png> <M:/presentations/NWQMC_16/fi
+g/swmp_comp.png> <M:/presentations/NWQMC_16/fig/swmp_agg.png>]
+(M:\presentations\NWQMC_16\Beck_etal_NWQMC16.vrb
+File: fig/swmp_summary.png Graphic file (type png)
+ <use fig/swmp_summary.png>
+Package pdftex.def Info: fig/swmp_summary.png used on input line 3.
+(pdftex.def)             Requested size: 205.37926pt x 178.4883pt.
+)
+File: fig/muskrat.png Graphic file (type png)
+
+<use fig/muskrat.png>
+Package pdftex.def Info: fig/muskrat.png used on input line 379.
+(pdftex.def)             Requested size: 18.21088pt x 13.87004pt.
+File: fig/back_tmp.pdf Graphic file (type pdf)
+ <use fig/back_tmp.pdf>
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 379.
+(pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
+ [21
+
+]
+(M:\presentations\NWQMC_16\Beck_etal_NWQMC16.vrb
+File: fig/swmp_comp.png Graphic file (type png)
+ <use fig/swmp_comp.png>
+Package pdftex.def Info: fig/swmp_comp.png used on input line 3.
+(pdftex.def)             Requested size: 273.83728pt x 179.89069pt.
+)
+File: fig/muskrat.png Graphic file (type png)
+
+<use fig/muskrat.png>
+Package pdftex.def Info: fig/muskrat.png used on input line 385.
+(pdftex.def)             Requested size: 18.21088pt x 13.87004pt.
+File: fig/back_tmp.pdf Graphic file (type pdf)
+ <use fig/back_tmp.pdf>
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 385.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
  [22
 
 ]
 (M:\presentations\NWQMC_16\Beck_etal_NWQMC16.vrb
-<fig/swmp_summary.png, id=687, 747.54282pt x 649.67719pt>
-File: fig/swmp_summary.png Graphic file (type png)
-
-<use fig/swmp_summary.png>
-Package pdftex.def Info: fig/swmp_summary.png used on input line 3.
-(pdftex.def)             Requested size: 212.2214pt x 184.43625pt.
-)
-File: fig/muskrat.png Graphic file (type png)
- <use fig/muskrat.png>
-Package pdftex.def Info: fig/muskrat.png used on input line 431.
-(pdftex.def)             Requested size: 18.21088pt x 13.87004pt.
-File: fig/back_tmp.pdf Graphic file (type pdf)
- <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 431.
-(pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
-
-[23
-
- <M:/presentations/NWQMC_16/fig/swmp_summary.png>]
-(M:\presentations\NWQMC_16\Beck_etal_NWQMC16.vrb
-<fig/swmp_comp.png, id=716, 954.56625pt x 627.09282pt>
-File: fig/swmp_comp.png Graphic file (type png)
- <use fig/swmp_comp.png>
-Package pdftex.def Info: fig/swmp_comp.png used on input line 3.
-(pdftex.def)             Requested size: 280.68465pt x 184.38795pt.
-)
-File: fig/muskrat.png Graphic file (type png)
-<use fig/muskrat.png>
-Package pdftex.def Info: fig/muskrat.png used on input line 437.
-(pdftex.def)             Requested size: 18.21088pt x 13.87004pt.
-File: fig/back_tmp.pdf Graphic file (type pdf)
- <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 437.
-(pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
- [24
-
- <M:/presentations/NWQMC_16/fig/swmp_comp.png>] (M:\presentations\NWQMC_16\Beck
-_etal_NWQMC16.vrb
-<fig/swmp_agg.png, id=745, 825.0825pt x 638.385pt>
 File: fig/swmp_agg.png Graphic file (type png)
  <use fig/swmp_agg.png>
 Package pdftex.def Info: fig/swmp_agg.png used on input line 3.
-(pdftex.def)             Requested size: 239.60567pt x 185.38016pt.
+(pdftex.def)             Requested size: 232.75829pt x 180.09082pt.
 )
 File: fig/muskrat.png Graphic file (type png)
 
 <use fig/muskrat.png>
-Package pdftex.def Info: fig/muskrat.png used on input line 443.
+Package pdftex.def Info: fig/muskrat.png used on input line 391.
 (pdftex.def)             Requested size: 18.21088pt x 13.87004pt.
 File: fig/back_tmp.pdf Graphic file (type pdf)
  <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 443.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 391.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
- [25
+ [23
 
- <M:/presentations/NWQMC_16/fig/swmp_agg.png>] (M:\presentations\NWQMC_16\Beck_
-etal_NWQMC16.vrb
-<fig/swmprats_forum.png, id=775, 719.68875pt x 518.6878pt>
+]
+(M:\presentations\NWQMC_16\Beck_etal_NWQMC16.vrb
+<fig/swmprats_forum.png, id=721, 719.68875pt x 518.6878pt>
 File: fig/swmprats_forum.png Graphic file (type png)
 
 <use fig/swmprats_forum.png>
@@ -1884,18 +1917,18 @@ Package pdftex.def Info: fig/swmprats_forum.png used on input line 4.
 )
 File: fig/muskrat.png Graphic file (type png)
  <use fig/muskrat.png>
-Package pdftex.def Info: fig/muskrat.png used on input line 450.
+Package pdftex.def Info: fig/muskrat.png used on input line 398.
 (pdftex.def)             Requested size: 18.21088pt x 13.87004pt.
 File: fig/back_tmp.pdf Graphic file (type pdf)
  <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 450.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 398.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
 
-[26
+[24
 
  <M:/presentations/NWQMC_16/fig/swmprats_forum.png>]
 (M:\presentations\NWQMC_16\Beck_etal_NWQMC16.vrb
-<fig/POTM.png, id=803, 540.51938pt x 368.1253pt>
+<fig/POTM.png, id=749, 540.51938pt x 368.1253pt>
 File: fig/POTM.png Graphic file (type png)
  <use fig/POTM.png>
 Package pdftex.def Info: fig/POTM.png used on input line 4.
@@ -1904,38 +1937,38 @@ Package pdftex.def Info: fig/POTM.png used on input line 4.
 File: fig/muskrat.png Graphic file (type png)
 
 <use fig/muskrat.png>
-Package pdftex.def Info: fig/muskrat.png used on input line 457.
+Package pdftex.def Info: fig/muskrat.png used on input line 405.
 (pdftex.def)             Requested size: 18.21088pt x 13.87004pt.
 File: fig/back_tmp.pdf Graphic file (type pdf)
  <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 457.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 405.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
- [27
+ [25
 
  <M:/presentations/NWQMC_16/fig/POTM.png>] (M:\presentations\NWQMC_16\Beck_etal
 _NWQMC16.vrb
-<fig/work1.jpg, id=831, 271.0125pt x 202.7575pt>
+<fig/work1.jpg, id=778, 271.0125pt x 202.7575pt>
 File: fig/work1.jpg Graphic file (type jpg)
  <use fig/work1.jpg>
-Package pdftex.def Info: fig/work1.jpg used on input line 10.
-(pdftex.def)             Requested size: 130.928pt x 97.95673pt.
+Package pdftex.def Info: fig/work1.jpg used on input line 11.
+(pdftex.def)             Requested size: 115.52386pt x 86.42912pt.
 
-<fig/work2.jpg, id=832, 271.0125pt x 271.0125pt>
+<fig/work2.jpg, id=779, 271.0125pt x 271.0125pt>
 File: fig/work2.jpg Graphic file (type jpg)
  <use fig/work2.jpg>
-Package pdftex.def Info: fig/work2.jpg used on input line 13.
-(pdftex.def)             Requested size: 98.58028pt x 98.5817pt.
+Package pdftex.def Info: fig/work2.jpg used on input line 14.
+(pdftex.def)             Requested size: 83.17615pt x 83.17352pt.
 )
 File: fig/muskrat.png Graphic file (type png)
 
 <use fig/muskrat.png>
-Package pdftex.def Info: fig/muskrat.png used on input line 475.
+Package pdftex.def Info: fig/muskrat.png used on input line 424.
 (pdftex.def)             Requested size: 18.21088pt x 13.87004pt.
 File: fig/back_tmp.pdf Graphic file (type pdf)
  <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 475.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 424.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
- [28
+ [26
 
  <M:/presentations/NWQMC_16/fig/work1.jpg> <M:/presentations/NWQMC_16/fig/work2
 .jpg>]
@@ -1952,13 +1985,13 @@ Package pdftex.def Info: fig/swmpr_logo.png used on input line 7.
 )
 File: fig/muskrat.png Graphic file (type png)
  <use fig/muskrat.png>
-Package pdftex.def Info: fig/muskrat.png used on input line 495.
+Package pdftex.def Info: fig/muskrat.png used on input line 444.
 (pdftex.def)             Requested size: 18.21088pt x 13.87004pt.
 File: fig/back_tmp.pdf Graphic file (type pdf)
  <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 495.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 444.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
- [29
+ [27
 
 ]
 (M:\presentations\NWQMC_16\Beck_etal_NWQMC16.vrb
@@ -1974,13 +2007,13 @@ Package pdftex.def Info: fig/swmpr_logo.png used on input line 7.
 )
 File: fig/muskrat.png Graphic file (type png)
  <use fig/muskrat.png>
-Package pdftex.def Info: fig/muskrat.png used on input line 513.
+Package pdftex.def Info: fig/muskrat.png used on input line 462.
 (pdftex.def)             Requested size: 18.21088pt x 13.87004pt.
 File: fig/back_tmp.pdf Graphic file (type pdf)
  <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 513.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 462.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
- [30
+ [28
 
 ]
 (M:\presentations\NWQMC_16\Beck_etal_NWQMC16.vrb
@@ -1993,7 +2026,7 @@ File: fig/swmpr_logo.png Graphic file (type png)
 <use fig/swmpr_logo.png>
 Package pdftex.def Info: fig/swmpr_logo.png used on input line 7.
 (pdftex.def)             Requested size: 114.8037pt x 36.45052pt.
- <fig/muskrat2.png, id=910, 434.37282pt x 330.48468pt>
+ <fig/muskrat2.png, id=857, 434.37282pt x 330.48468pt>
 File: fig/muskrat2.png Graphic file (type png)
 
 <use fig/muskrat2.png>
@@ -2011,24 +2044,24 @@ Package pdftex.def Info: fig/muskrat2.png used on input line 11.
 File: fig/muskrat.png Graphic file (type png)
 
 <use fig/muskrat.png>
-Package pdftex.def Info: fig/muskrat.png used on input line 530.
+Package pdftex.def Info: fig/muskrat.png used on input line 479.
 (pdftex.def)             Requested size: 18.21088pt x 13.87004pt.
 File: fig/back_tmp.pdf Graphic file (type pdf)
  <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 530.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 479.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
-Package atenddvi Info: Last page = 31.
- [31
+Package atenddvi Info: Last page = 29.
+ [29
 
  <M:/presentations/NWQMC_16/fig/muskrat2.png>]
 \tf@nav=\write6
 \tf@toc=\write7
 \tf@snm=\write8
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 532.
-Package atveryend Info: Executing hook `AfterLastShipout' on input line 532.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 481.
+Package atveryend Info: Executing hook `AfterLastShipout' on input line 481.
  (M:\presentations\NWQMC_16\Beck_etal_NWQMC16.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 532.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 532.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 481.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 481.
 Package rerunfilecheck Info: File `Beck_etal_NWQMC16.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -2036,14 +2069,14 @@ Package rerunfilecheck Info: File `Beck_etal_NWQMC16.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 532.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 481.
  ) 
 Here is how much of TeX's memory you used:
- 30312 strings out of 493921
- 619274 string characters out of 3147282
- 707758 words of memory out of 3000000
- 32838 multiletter control sequences out of 15000+200000
- 11068 words of font info for 43 fonts, out of 3000000 for 9000
+ 30303 strings out of 493921
+ 619189 string characters out of 3147282
+ 706758 words of memory out of 3000000
+ 32833 multiletter control sequences out of 15000+200000
+ 10900 words of font info for 42 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  48i,16n,82p,470b,635s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
@@ -2056,9 +2089,9 @@ lic/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
 nts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
 8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C
 :/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam7.pfb>
-Output written on Beck_etal_NWQMC16.pdf (31 pages, 6011346 bytes).
+Output written on Beck_etal_NWQMC16.pdf (29 pages, 5997397 bytes).
 PDF statistics:
- 996 PDF objects out of 1000 (max. 8388607)
- 63 named destinations out of 1000 (max. 500000)
+ 941 PDF objects out of 1000 (max. 8388607)
+ 59 named destinations out of 1000 (max. 500000)
  260 words of extra memory for PDF output out of 10000 (max. 10000000)
 

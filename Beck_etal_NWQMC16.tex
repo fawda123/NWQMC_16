@@ -95,7 +95,7 @@
 \fbox{\includegraphics[width=0.7\textwidth]{fig/swmprats_logo.png}}}
 }
 
-\title[NERRS Analysis Tools]{Integrated Analysis Tools for the NERRS System-Wide Monitoring Program Data}
+\title[NERRS Analysis Tools]{{\bf Integrated Analysis Tools for the NERRS System-Wide Monitoring Program Data}}
 
 \author[M. Beck, T. O'Brien, M. Bundy]{Marcus W. Beck\inst{1} \and Todd D. O'Brien\inst{2} \and Marie H. Bundy\inst{2}}
 
@@ -112,8 +112,8 @@
 %%%%%%
 \begin{frame}{\includegraphics[width=0.05\paperwidth]{fig/muskrat.png}\hspace{0.07in}{\bf Overview}}
 \begin{itemize}
-\item Background of National Estuarine Research Reserves (NERRS) System-wide Monitoring Program (SWMP) \\~\\
-\item Genesis of ``SWMPrats.net'' community of practice \\~\\
+\item Background of National Estuarine Research Reserves (NERRS) System-Wide Monitoring Program (SWMP) \\~\\
+\item Genesis of SWMPrats.net community of practice \\~\\
 \item Features of SWMPrats.net \\~\\
 \begin{itemize}
 \item SWMPr \\~\\
@@ -125,15 +125,15 @@
 \end{frame}
 
 %%%%%%
-\begin{frame}{What is NERRS/SWMP?}{}
+\begin{frame}{\includegraphics[width=0.05\paperwidth]{fig/muskrat.png}\hspace{0.07in}{\bf What is NERRS/SWMP?}}{}
 {\bf NERRS}\\
 National Estuarine Research Reserve System, established by Coastal Zone Management Act of 1972. Focus on \Bigtxt{long-term research}, \Bigtxt{monitoring}, \Bigtxt{education}, and \Bigtxt{stewardship} for more effective coastal management.\\~\\
 {\bf SWMP}\\
-System Wide Monitoring Program, initiated in 1995 to provide \Bigtxt{continuous monitoring} data at over 300 stations in in each of the 28 NERRS reserves \\~\\
+System Wide Monitoring Program, initiated in 1995 to provide \Bigtxt{continuous monitoring} data at over 140 stations in each of the 28 NERRS reserves \\~\\
 \end{frame}
 
 %%%%%%
-\begin{frame}{What is NERRS/SWMP?}
+\begin{frame}{\includegraphics[width=0.05\paperwidth]{fig/muskrat.png}\hspace{0.07in}{\bf What is NERRS/SWMP?}}
 \centerline{\includegraphics[width = 0.9\textwidth]{fig/NERRS_locations.png}}
 \tiny
 \flushright
@@ -141,33 +141,32 @@ System Wide Monitoring Program, initiated in 1995 to provide \Bigtxt{continuous 
 \end{frame}
 
 %%%%%%
-\begin{frame}{What is NERRS/SWMP?}
+\begin{frame}{\includegraphics[width=0.05\paperwidth]{fig/muskrat.png}\hspace{0.07in}{\bf What is NERRS/SWMP?}}
 Each reserve has fixed, continuous monitoring stations for \Bigtxt{water quality} (15 min), \Bigtxt{meteorology} (15 min), and \Bigtxt{nutrients} (monthly)\\~\\
-The parameters for a station are specific to the parameter type \\~\\
 \begin{columns}[t]
 \begin{column}{0.3\textwidth}
 \Bigtxt{Water quality} \\~\\
-temp, spcond, sal, do\_pct, do\_mgl, depth, cdepth, level, clevel, ph, turb, chlfluor
+temperature, conductivity, salinity, dissolved oxygen, depth, pH, turbidity, fluorescence
 \end{column}
 \begin{column}{0.3\textwidth}
 \Bigtxt{Meteorology} \\~\\
-atemp, rh, bp, wspd, maxwspd, wdir, sdwdir, totpar, totprcp, cumprcp, totsorad \\~\\
+air temperature, humidity, pressure, wind speed, wind direction, PAR, precipitation
 \end{column}
 \begin{column}{0.3\textwidth}
 \Bigtxt{Nutrients} \\~\\
-po4f, chla\_n, no3f, no2f, nh4f, no23f, ke\_n, urea
+phosphate, chlorophyll, nitrate, nitrite, ammonium, Kjeldahl nitrogen, urea
 \end{column}
 \end{columns}
 \end{frame}
 
 %%%%%%
-\begin{frame}[t]{What is NERRS/SWMP?}
+\begin{frame}[t]{\includegraphics[width=0.05\paperwidth]{fig/muskrat.png}\hspace{0.07in}{\bf What is NERRS/SWMP?}}
 Data maintained by the Centralized Data Management Office (\href{http://cdmo.baruch.sc.edu/}{CDMO})\\~\\
-\centerline{\includegraphics[width = \textwidth]{fig/cdmo_front.png}}
+\centerline{\includegraphics[width = 0.9\textwidth]{fig/cdmo_front.png}}
 \end{frame}
 
 %%%%%%
-\begin{frame}{What is NERRS/SWMP?}
+\begin{frame}{\includegraphics[width=0.05\paperwidth]{fig/muskrat.png}\hspace{0.07in}{\bf What is NERRS/SWMP?}}
 Hallmarks of SWMP - Standardized instruments and protocols, rigorous QAQC, very large dataset \\~\\
 \begin{itemize}
 \item All 28 reserves use identical instruments and standardized protocols \\~\\
@@ -177,28 +176,15 @@ Hallmarks of SWMP - Standardized instruments and protocols, rigorous QAQC, very 
 \end{frame}
 
 %%%%%%
-\begin{frame}[t]{What is NERRS/SWMP?}
-As of April 30th, $>$ 63 million SWMP  data records available from CDMO\\~\\
+\begin{frame}[t]{\includegraphics[width=0.05\paperwidth]{fig/muskrat.png}\hspace{0.07in}{\bf What is NERRS/SWMP?}}
+As of last month, $>$ 63 million SWMP  data records available \\~\\
 Raw data will look like this...\\~\\
-\centerline{\includegraphics[width = 0.9\textwidth]{fig/qaqc_ex.png}}
+\centerline{\includegraphics[width = 0.85\textwidth]{fig/qaqc_ex.png}}
 \end{frame}
 
 %%%%%%
-\begin{frame}{What are the problems?}
-An invaluable data source but no recent comparative analyses between systems \\~\\
-NERRS researchers, managers, and technicians need more tools for trend analysis \\~\\
-Some specific issues:\\~\\
-\begin{itemize}
-\item Knowing what data to use and how to obtain
-\item Dealing with QAQC columns or removing `bad' observations
-\item Combining data for comparison
-\item Issues inherent with time series, e.g., signal vs. noise, data quantity
-\end{itemize}
-\end{frame}
-
-%%%%%%
-\begin{frame}{What are the needs?}
-Several needs were identified given the challenges:\\~\\
+\begin{frame}{\includegraphics[width=0.05\paperwidth]{fig/muskrat.png}\hspace{0.07in}{\bf What are the needs?}}
+NERRS researchers, managers, and technicians need more tools for trend analysis: \\~\\
 \begin{itemize}
 \item Understand regional and national trends while retaining the ability to determine local trends \\~\\
 \item Train users \\~\\
@@ -276,54 +262,7 @@ What are some challenges? \\~\\
 %%%%%%
 \begin{frame}[fragile]{\includegraphics[width=0.05\paperwidth]{fig/muskrat.png}\hspace{0.07in}{\bf SWMPrats.net: The SWMPr package}}
 Package description published in The R Journal this year \\~\\ 
-\centerline{\fbox{\includegraphics[width=0.85\textwidth]{fig/SWMPr_manu.png}}}
-\end{frame}
-
-%%%%%%
-\begin{frame}[t]{What can SWMPr do?}
-SWMPr functions are grouped into three categories that describe their use in the `data workflow' \\~\\
-\begin{columns}[t]
-\begin{column}{0.3\textwidth}
-\Bigtxt{Retrieve}\\~\\
-\small{
-\texttt{all\_params}\\
-\texttt{all\_params_dtrng}\\
-\texttt{import\_local}\\
-\texttt{import\_remote}\\
-\texttt{single\_param}\\
-\texttt{site\_codes}\\
-\texttt{site\_codes\_ind}
-}
-\end{column}
-\begin{column}{0.3\textwidth}
-\Bigtxt{Organize}\\~\\
-\small{
-\texttt{comb}\\
-\texttt{qaqc}\\
-\texttt{qaqcchk}\\
-\texttt{rem\_reps}\\
-\texttt{setstep}\\
-\texttt{subset}\\
-}
-\end{column}
-\begin{column}{0.3\textwidth}
-\Bigtxt{Analyze}\\~\\
-\small{
-\texttt{aggreswmp}\\
-\texttt{aggremetab}\\
-\texttt{ecometab}\\
-\texttt{decomp}\\
-\texttt{decomp\_cj}\\
-\texttt{hist}\\
-\texttt{lines}\\
-\texttt{na.approx}\\
-\texttt{plot}\\
-\texttt{plot\_metab}\\
-\texttt{plot\_summary}\\
-\texttt{smoother}\\
-}
-\end{column}
-\end{columns}
+\centerline{\fbox{\includegraphics[width=0.75\textwidth]{fig/SWMPr_manu.png}}}
 \end{frame}
 
 %%%%%%
@@ -417,29 +356,38 @@ Example: estimate ecosystem metabolism with \texttt{ecometab} (apadbwq)
 
 %%%%%%
 \begin{frame}[fragile]{\includegraphics[width=0.05\paperwidth]{fig/muskrat.png}\hspace{0.07in}{\bf SWMPrats.net: Widgets}}
-The most common question - has there been a change over time at my site? \\~\\
-The functions in the package can help answer this very general question...\\~\\
-...but it's often easier to interactively evaluate the data! \\~\\
-Two shiny applications, hosted on \href{http://www.shinyapps.io/}{shinyapps.io}, allow users to visualize trends in SWMP data \\~\\
-These apps were created with SWMPr functions or use them `reactively'
+The most common question - has there been a change over time at my site (long-term trends)? \\~\\
+Three Shiny applications allow users to visualize trends in SWMP data \\~\\
+These apps allow `reactive' use of SWMPr functions \\~\\
+\begin{columns}
+\begin{column}{0.3\textwidth}
+\centerline{\fbox{\includegraphics[width = 0.95\textwidth]{fig/swmp_summary.png}}}
+\end{column}
+\begin{column}{0.3\textwidth}
+\centerline{\fbox{\includegraphics[width = 0.95\textwidth]{fig/swmp_comp.png}}}
+\end{column}
+\begin{column}{0.3\textwidth}
+\centerline{\fbox{\includegraphics[width = 0.95\textwidth]{fig/swmp_agg.png}}}
+\end{column}
+\end{columns}
 \end{frame}
 
 %%%%%%
 \begin{frame}[t, fragile]{\includegraphics[width=0.05\paperwidth]{fig/muskrat.png}\hspace{0.07in}{\bf SWMPrats.net: Widgets}}
 SWMP summary plots: \href{https://beckmw.shinyapps.io/swmp_summary/}{https://beckmw.shinyapps.io/swmp\_summary/}\\~\\
-\centerline{\includegraphics[width = 0.62\textwidth]{fig/swmp_summary.png}}
+\centerline{\fbox{\includegraphics[width = 0.6\textwidth]{fig/swmp_summary.png}}}
 \end{frame}
 
 %%%%%%
 \begin{frame}[t, fragile]{\includegraphics[width=0.05\paperwidth]{fig/muskrat.png}\hspace{0.07in}{\bf SWMPrats.net: Widgets}}
 SWMP trends map: \href{https://beckmw.shinyapps.io/swmp_comp/}{https://beckmw.shinyapps.io/swmp\_comp/}\\~\\
-\centerline{\includegraphics[width = 0.82\textwidth]{fig/swmp_comp.png}}
+\centerline{\fbox{\includegraphics[width = 0.8\textwidth]{fig/swmp_comp.png}}}
 \end{frame}
 
 %%%%%%
 \begin{frame}[t, fragile]{\includegraphics[width=0.05\paperwidth]{fig/muskrat.png}\hspace{0.07in}{\bf SWMPrats.net: Widgets}}
 SWMP aggregation: \href{https://beckmw.shinyapps.io/swmp_agg/}{https://beckmw.shinyapps.io/swmp\_agg/}\\~\\
-\centerline{\includegraphics[width = 0.7\textwidth]{fig/swmp_agg.png}}
+\centerline{\fbox{\includegraphics[width = 0.68\textwidth]{fig/swmp_agg.png}}}
 \end{frame}
 
 %%%%%%
@@ -460,16 +408,17 @@ SWMP aggregation: \href{https://beckmw.shinyapps.io/swmp_agg/}{https://beckmw.sh
 \begin{frame}[fragile]{\includegraphics[width=0.05\paperwidth]{fig/muskrat.png}\hspace{0.07in}{\bf Continuing work and engagement}}
 SWMPrats.net is in its infancy but already seeing heavy use \\~\\
 \begin{itemize}
+\item Over 4000 visits to the website this year
 \item 3140 downloads of SWMPr to date
 \item Apps have been used 160 hours in the last three months \\~\\
 \end{itemize}
 Additional training workshops Oct. 2015, planned for 2016 \\~\\
 \begin{columns}
 \begin{column}{0.45\textwidth}
-\centerline{\fbox{\includegraphics[width = 0.85\textwidth]{fig/work1.jpg}}}
+\centerline{\fbox{\includegraphics[width = 0.75\textwidth]{fig/work1.jpg}}}
 \end{column}
 \begin{column}{0.45\textwidth}
-\centerline{\fbox{\includegraphics[width = 0.64\textwidth]{fig/work2.jpg}}}
+\centerline{\fbox{\includegraphics[width = 0.54\textwidth]{fig/work2.jpg}}}
 \end{column}
 \end{columns}
 \end{frame}

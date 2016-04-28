@@ -213,7 +213,8 @@ One-day training workshop at 2014 annual meeting \\~\\
 \vspace{0.2in}
 A working group was formed from this meeting \\~\\
 \Large
-\Bigtxt{S}ystem-\Bigtxt{W}ide \Bigtxt{M}onitoring \Bigtxt{P}rogram \Bigtxt{R}esources for the \Bigtxt{A}nalysis of \Bigtxt{T}ime \Bigtxt{S}eries \\~\\
+\Bigtxt{S}ystem-\Bigtxt{W}ide \Bigtxt{M}onitoring \Bigtxt{P}rogram \\
+\hspace{0.5in} \Bigtxt{R}esources for the \Bigtxt{A}nalysis of \Bigtxt{T}ime \Bigtxt{S}eries \\~\\
 \normalsize
 \href{http://swmprats.net}{SWMPrats.net} is our base of operations...
 \end{frame}

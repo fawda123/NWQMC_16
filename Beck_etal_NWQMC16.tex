@@ -166,16 +166,6 @@ Data maintained by the Centralized Data Management Office (\href{http://cdmo.bar
 \end{frame}
 
 %%%%%%
-\begin{frame}{\includegraphics[width=0.05\paperwidth]{fig/muskrat.png}\hspace{0.07in}{\bf What is NERRS/SWMP?}}
-Hallmarks of SWMP - Standardized instruments and protocols, rigorous QAQC, very large dataset \\~\\
-\begin{itemize}
-\item All 28 reserves use identical instruments and standardized protocols \\~\\
-\item All data are managed by the NERRS Centralized Data Management Office \\~\\
-\item Database meets the definition of ``big data''
-\end{itemize}
-\end{frame}
-
-%%%%%%
 \begin{frame}[t]{\includegraphics[width=0.05\paperwidth]{fig/muskrat.png}\hspace{0.07in}{\bf What is NERRS/SWMP?}}
 As of last month, $>$ 63 million SWMP  data records available \\~\\
 Raw data will look like this...\\~\\
@@ -266,28 +256,6 @@ Package description published in The R Journal this year \\~\\
 \centerline{\fbox{\includegraphics[width=0.75\textwidth]{fig/SWMPr_manu.png}}}
 \end{frame}
 
-%%%%%%
-\begin{frame}[fragile]{\includegraphics[width=0.05\paperwidth]{fig/muskrat.png}\hspace{0.07in}{\bf SWMPrats.net: The SWMPr package}}
-Proof of concept, import and combine wq and weather data from Apalachicola Bay
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.941, 0.976, 0.91}\color{fgcolor}\begin{kframe}
-\begin{alltt}
-\hlstd{> }\hlcom{# import data}
-\hlstd{> }\hlkwd{data}\hlstd{(apaebmet)}
-\hlstd{> }\hlkwd{data}\hlstd{(apacpwq)}
-\hlstd{> }\hlstd{met} \hlkwb{<-} \hlstd{apaebmet}
-\hlstd{> }\hlstd{wq} \hlkwb{<-} \hlstd{apacpwq}
-\hlstd{> }
-\hlstd{> }\hlcom{# combine, two hours time step}
-\hlstd{> }\hlcom{# only overlapping date ranges}
-\hlstd{> }\hlstd{dat} \hlkwb{<-} \hlkwd{comb}\hlstd{(met, wq,} \hlkwc{timestep} \hlstd{=} \hlnum{120}\hlstd{,}
-\hlstd{+ }  \hlkwc{method} \hlstd{=} \hlstr{'intersect'}\hlstd{)}
-\end{alltt}
-\end{kframe}
-\end{knitrout}
-Try doing the same by hand...
-\end{frame}
-
 %%%%%
 \begin{frame}[fragile]{\includegraphics[width=0.05\paperwidth]{fig/muskrat.png}\hspace{0.07in}{\bf SWMPrats.net: The SWMPr package}}
 Example: fill missing data with \texttt{na.approx} \\~\\
@@ -374,35 +342,10 @@ These apps allow `reactive' use of SWMPr functions \\~\\
 \end{frame}
 
 %%%%%%
-\begin{frame}[t, fragile]{\includegraphics[width=0.05\paperwidth]{fig/muskrat.png}\hspace{0.07in}{\bf SWMPrats.net: Widgets}}
-SWMP summary plots: \href{https://beckmw.shinyapps.io/swmp_summary/}{https://beckmw.shinyapps.io/swmp\_summary/}\\~\\
-\centerline{\fbox{\includegraphics[width = 0.6\textwidth]{fig/swmp_summary.png}}}
-\end{frame}
-
-%%%%%%
-\begin{frame}[t, fragile]{\includegraphics[width=0.05\paperwidth]{fig/muskrat.png}\hspace{0.07in}{\bf SWMPrats.net: Widgets}}
-SWMP trends map: \href{https://beckmw.shinyapps.io/swmp_comp/}{https://beckmw.shinyapps.io/swmp\_comp/}\\~\\
-\centerline{\fbox{\includegraphics[width = 0.8\textwidth]{fig/swmp_comp.png}}}
-\end{frame}
-
-%%%%%%
-\begin{frame}[t, fragile]{\includegraphics[width=0.05\paperwidth]{fig/muskrat.png}\hspace{0.07in}{\bf SWMPrats.net: Widgets}}
-SWMP aggregation: \href{https://beckmw.shinyapps.io/swmp_agg/}{https://beckmw.shinyapps.io/swmp\_agg/}\\~\\
-\centerline{\fbox{\includegraphics[width = 0.68\textwidth]{fig/swmp_agg.png}}}
-\end{frame}
-
-%%%%%%
 \begin{frame}[t, fragile]{\includegraphics[width=0.05\paperwidth]{fig/muskrat.png}\hspace{0.07in}{\bf SWMPrats.net: Forum}}
 \centerline{Last but not least, a discussion \href{http://swmprats.net/forum}{forum} for all things analytical}
 \vspace{0.1in}
 \centerline{\fbox{\includegraphics[width = 0.75\textwidth]{fig/swmprats_forum.png}}}
-\end{frame}
-
-%%%%%%
-\begin{frame}[t, fragile]{\includegraphics[width=0.05\paperwidth]{fig/muskrat.png}\hspace{0.07in}{\bf SWMPrats.net: Forum}}
-\centerline{Last but not least, a discussion \href{http://swmprats.net/forum}{forum} for all things analytical}
-\vspace{0.1in}
-\centerline{\fbox{\includegraphics[width = 0.75\textwidth]{fig/POTM.png}}}
 \end{frame}
 
 %%%%%%
@@ -441,24 +384,6 @@ Success depends on:\\~\\
 \item Healthy discourse between the creators and users \\~\\
 \item In-person training workshops\\~\\
 \item Benefits of open-source resources
-\end{itemize}
-\end{frame}
-
-%%%%%%
-\begin{frame}[t, fragile]{\includegraphics[width=0.05\paperwidth]{fig/muskrat.png}\hspace{0.07in}{\bf Continuing work and engagement}}
-\begin{columns}
-\begin{column}{0.53\textwidth}
-\centerline{\fbox{\includegraphics[width = \textwidth]{fig/swmprats_logo.png}}}
-\end{column}
-\begin{column}{0.43 \textwidth}
-\centerline{\fbox{\includegraphics[width = 0.78\textwidth]{fig/swmpr_logo.png}}}
-\end{column}
-\end{columns}
-\vspace{0.2in}
-\begin{itemize}
-\item SWMP data are now more accessible and analyses are tractable\\~\\
-\item Site, regional, and national comparisons provide capacity to develop understanding of climate and anthropogenic drivers of change in estuarine systems \\~\\
-\item As the dataset expands, these tools will facilitate evaluation of long-term trends within and between locations
 \end{itemize}
 \end{frame}
 
